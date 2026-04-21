@@ -1,26 +1,26 @@
 class Belmont < Formula
   desc "Structured AI coding sessions with PRD-driven planning and verification"
   homepage "https://github.com/blake-simpson/belmont"
-  version "0.9.6"
+  version "0.9.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/blake-simpson/belmont/releases/download/v#{version}/belmont-darwin-arm64"
-      sha256 "ffe222a67c03f0b5aaa3713c5762389ef3de45469847f769f54b44e08d8a993e"
+      sha256 "9b02940bb6a73e1711d06121145eb3b4d7fb0b607c9f2051ddd6950e2e262668"
     else
       url "https://github.com/blake-simpson/belmont/releases/download/v#{version}/belmont-darwin-amd64"
-      sha256 "cef7a49bbb5104c2eb496a3df6fd5d4bf272daf9ff0787a411e4f86e4d66694b"
+      sha256 "3e3b8b80b29ed85bb2152fbfc9656434c78e595f37bd9dcc472b9afb96256ac2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/blake-simpson/belmont/releases/download/v#{version}/belmont-linux-arm64"
-      sha256 "33cdb92cf8d43bc83bc9f1a76d83fb53b7b943eebdc48220397863489b242c83"
+      sha256 "f3df10f75d30a80a02705ed0c6965478d94c48c0ccd1d12aa97c88d34b201339"
     else
       url "https://github.com/blake-simpson/belmont/releases/download/v#{version}/belmont-linux-amd64"
-      sha256 "23715cf22c0b84d253d4ae8f73d57116402652aa68618a833f57aac62d23ab97"
+      sha256 "a7011880c542ea0a56b7dfce87eede27b02724e7334c44b76666b653f981c988"
     end
   end
 
